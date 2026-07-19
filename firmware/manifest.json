@@ -1,0 +1,33 @@
+{
+  "generated": "2026-07-19T19:27:07.4574140Z",
+  "targets": {
+    "heltec-v3": {
+      "version": "2.9.0",
+      "file": "firmware/heltec-v3/firmware.factory.bin",
+      "sha256": "CB1D65E68A3EB85C87238D66976A4348FA28B5748981559744E064669CD112F6",
+      "sizeBytes": 1989200,
+      "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini)"
+    },
+    "timingpod-v2demo": {
+      "version": "2.9.0-V2DEMO",
+      "file": "firmware/timingpod-v2demo/firmware.factory.bin",
+      "sha256": "F0070DEF1154EAF08BADC82123C8CD90DCCCF0380D25DF6783A667D3D533DB4D",
+      "sizeBytes": 1988224,
+      "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V)"
+    },
+    "heltec-v3-gateway": {
+      "version": "2.9.0",
+      "file": "firmware/heltec-v3-gateway/firmware.factory.bin",
+      "sha256": "548D05AED44218624950A7904C14C93AEE8A7BD91797DD499A9049A7E2E39FE5",
+      "sizeBytes": 1912528,
+      "notes": "RaceVillage gateway"
+    },
+    "beacon-esp32c3": {
+      "version": "3.1.0",
+      "file": "",
+      "sha256": "",
+      "sizeBytes": 0,
+      "notes": "Source-only: beacons are built per-bib by the Device Manager"
+    }
+  }
+}
