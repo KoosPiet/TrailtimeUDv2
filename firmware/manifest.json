@@ -1,33 +1,33 @@
 {
-  "generated": "2026-07-19T19:27:07.4574140Z",
+  "generated": "2026-08-02T17:05:00.0000000Z",
   "targets": {
     "heltec-v3": {
-      "version": "2.9.0",
+      "version": "2.9.1",
       "file": "firmware/heltec-v3/firmware.factory.bin",
-      "sha256": "CB1D65E68A3EB85C87238D66976A4348FA28B5748981559744E064669CD112F6",
-      "sizeBytes": 1989200,
-      "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini)"
+      "sha256": "9076A7DC6A2B416B067365840092687B5A33DF2C284306312EBE4D772A18FEE1",
+      "sizeBytes": 1988976,
+      "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini). 2.9.1 shows the identified bib number full screen on the OLED for 3 s on every beam break, at the same instant as the beep."
     },
     "timingpod-v2demo": {
-      "version": "2.9.0-V2DEMO",
+      "version": "2.9.1-V2DEMO",
       "file": "firmware/timingpod-v2demo/firmware.factory.bin",
-      "sha256": "F0070DEF1154EAF08BADC82123C8CD90DCCCF0380D25DF6783A667D3D533DB4D",
-      "sizeBytes": 1988224,
-      "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V)"
+      "sha256": "7B063A7FFE47D2B2D3D1E82A73501689B3426BB499CF80D07EF17195DD7BC7E1",
+      "sizeBytes": 1988128,
+      "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V). 2.9.1 shows the identified bib number full screen on the OLED for 3 s on every beam break, at the same instant as the beep."
     },
     "heltec-v3-gateway": {
-      "version": "2.9.0",
+      "version": "2.9.1",
       "file": "firmware/heltec-v3-gateway/firmware.factory.bin",
-      "sha256": "548D05AED44218624950A7904C14C93AEE8A7BD91797DD499A9049A7E2E39FE5",
+      "sha256": "5D5DEE5F0619CF20DF57F2ABE709D7FD3539836F9693949DCC74F0962F6C946D",
       "sizeBytes": 1912528,
-      "notes": "RaceVillage gateway"
+      "notes": "RaceVillage gateway. Rebuilt at 2.9.1 for version parity with the pods; the bib display is a pod-side feature and does not apply to the gateway."
     },
     "beacon-esp32c3": {
       "version": "3.1.0",
       "file": "",
       "sha256": "",
       "sizeBytes": 0,
-      "notes": "Source-only: beacons are built per-bib by the Device Manager"
+      "notes": "Source-only: beacons are built per-bib by the Device Manager. 3.1.0 adds the RACE DAY 8-hour hold and the advertisement frame the desktop's Beacons tab reads."
     }
   }
 }
