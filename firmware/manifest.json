@@ -1,33 +1,41 @@
 {
-  "generated": "2026-08-02T17:05:00.0000000Z",
+  "generated": "2026-08-10T15:35:09.1542970Z",
+  "line": "v2",
   "targets": {
     "heltec-v3": {
-      "version": "2.9.1",
+      "version": "2.9.2",
       "file": "firmware/heltec-v3/firmware.factory.bin",
-      "sha256": "9076A7DC6A2B416B067365840092687B5A33DF2C284306312EBE4D772A18FEE1",
-      "sizeBytes": 1988976,
-      "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini). 2.9.1 shows the identified bib number full screen on the OLED for 3 s on every beam break, at the same instant as the beep."
+      "sha256": "5709EF6939F24B88C270865F932C78A6948C6544FD1D9C9314DED5D9F6909B70",
+      "sizeBytes": 1988992,
+      "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini)"
     },
     "timingpod-v2demo": {
-      "version": "2.9.1-V2DEMO",
+      "version": "2.9.2-V2DEMO",
       "file": "firmware/timingpod-v2demo/firmware.factory.bin",
-      "sha256": "7B063A7FFE47D2B2D3D1E82A73501689B3426BB499CF80D07EF17195DD7BC7E1",
+      "sha256": "F5F1605BE71865664BBD2C136C71E01D13C4E94D4A442C84B4A200A23DE70AEF",
       "sizeBytes": 1988128,
-      "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V). 2.9.1 shows the identified bib number full screen on the OLED for 3 s on every beam break, at the same instant as the beep."
+      "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V, I2C addr 0x10)"
+    },
+    "timingpod-v2demo-uart": {
+      "version": "2.9.2-V2DEMO-UART",
+      "file": "firmware/timingpod-v2demo-uart/firmware.factory.bin",
+      "sha256": "97FE45C125D9F953C67CA2509162D87D24E4A088FE60B06E1895D8AC187DDEA8",
+      "sizeBytes": 1988480,
+      "notes": "Demo pods with Benewake TFmini-S read over UART (green TXD -> GPIO42, white RXD -> GPIO41). Skips the Wire1 I2C scan, which the other builds hang on."
     },
     "heltec-v3-gateway": {
-      "version": "2.9.1",
+      "version": "2.9.2",
       "file": "firmware/heltec-v3-gateway/firmware.factory.bin",
-      "sha256": "5D5DEE5F0619CF20DF57F2ABE709D7FD3539836F9693949DCC74F0962F6C946D",
-      "sizeBytes": 1912528,
-      "notes": "RaceVillage gateway. Rebuilt at 2.9.1 for version parity with the pods; the bib display is a pod-side feature and does not apply to the gateway."
+      "sha256": "DBEB1216CE83980FCACC99754572C2FA6B03691A88FFFA66BB87EC935186B5A2",
+      "sizeBytes": 1912544,
+      "notes": "RaceVillage gateway"
     },
     "beacon-esp32c3": {
       "version": "3.1.0",
       "file": "",
       "sha256": "",
       "sizeBytes": 0,
-      "notes": "Source-only: beacons are built per-bib by the Device Manager. 3.1.0 adds the RACE DAY 8-hour hold and the advertisement frame the desktop's Beacons tab reads."
+      "notes": "Source-only: beacons are built per-bib by the Device Manager"
     }
   }
 }
