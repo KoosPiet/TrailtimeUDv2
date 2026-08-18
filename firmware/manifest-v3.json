@@ -1,15 +1,15 @@
 {
-  "generated": "2026-08-12T12:31:05.9715053Z",
+  "generated": "2026-08-18T07:21:28.3160408Z",
   "line": "v3",
   "targets": {
     "trailtime-v3-pod": {
-      "version": "3.4.0",
+      "version": "3.6.0",
       "file": "firmware/trailtime-v3-pod/firmware.factory.bin",
-      "sha256": "01AA2B786F98DA5157282A79484A169C70E2605B8DFD87333481A6EA25F8BBBB",
-      "sizeBytes": 1373552,
+      "sha256": "804C6576880154CEDFA0E0A4A44171999B561324B860F4A01F360EAFF3A8F886",
+      "sizeBytes": 1399968,
       "otaFile": "firmware/trailtime-v3-pod/firmware.bin",
-      "otaSha256": "46514A8D1BB988C1F8E6F290E5DBAA8510EF906522E5997F14ABD9D1A27725B5",
-      "otaSizeBytes": 1308016,
+      "otaSha256": "48490816981D45B23423CA053765E81B0FCCE310FCEA7D9E33DCFD8C3DF652EE",
+      "otaSizeBytes": 1334432,
       "notes": "TrailTime V3 LTE pod (Waveshare ESP32-S3-A7670E): camera trigger, BLE beacons, LTE uplink. No LoRa/Meshtastic."
     }
   }
