@@ -1,0 +1,43 @@
+{
+  "generated": "2026-09-02T08:16:04.8620755Z",
+  "line": "beacon",
+  "targets": {
+    "beacon-esp32c3": {
+      "version": "3.5.1",
+      "file": "",
+      "sha256": "",
+      "sizeBytes": 0,
+      "parts": [
+        {
+          "name": "bootloader",
+          "offset": "0x0",
+          "file": "firmware/beacon-esp32c3/bootloader.bin",
+          "sha256": "39BC89DE1F8F6B895FAC778152AD812390E2B712FC2E6D1937B850B005D2F341",
+          "sizeBytes": 21280
+        },
+        {
+          "name": "partitions",
+          "offset": "0x8000",
+          "file": "firmware/beacon-esp32c3/partitions.bin",
+          "sha256": "639A9393F84BD507CADEBC164C4D9E72B2539608485879CB8B51356E484EF6D1",
+          "sizeBytes": 3072
+        },
+        {
+          "name": "otadata",
+          "offset": "0x10000",
+          "file": "firmware/beacon-esp32c3/ota_data_initial.bin",
+          "sha256": "7D2C7AC4888BFD75CD5F56E8D61F69595121183AFC81556C876732FD3782C62F",
+          "sizeBytes": 8192
+        },
+        {
+          "name": "app",
+          "offset": "0x20000",
+          "file": "firmware/beacon-esp32c3/firmware.bin",
+          "sha256": "B536BA6981E1E2F04DEF61E2ABE262C12A57900F4C5BD2BFEDE0E18A2C337F04",
+          "sizeBytes": 1219184
+        }
+      ],
+      "notes": "TrailTime beacon (ESP32-C3). Flashed as separate images so nvs (the bib) and podlog (witness records) survive. Bib and power profile are set over BLE."
+    }
+  }
+}
