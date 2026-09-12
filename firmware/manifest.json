@@ -1,32 +1,32 @@
 {
-  "generated": "2026-09-12T09:56:56.8307810Z",
+  "generated": "2026-09-12T10:14:53.3112565Z",
   "line": "v2",
   "targets": {
     "heltec-v3": {
-      "version": "2.9.4",
+      "version": "2.9.5",
       "file": "firmware/heltec-v3/firmware.factory.bin",
-      "sha256": "6D81A4EE3C1390B2DD849712AFA9827964BB58ECFD195D8B6FBEECD8AA5DE1E1",
-      "sizeBytes": 1991584,
+      "sha256": "BBC9F9D1E4CD1BD0E3C9FDAFBAFC866293DF3F08E386A16B9DB326B8772FEEDF",
+      "sizeBytes": 1992656,
       "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini)"
     },
     "timingpod-v2demo": {
-      "version": "2.9.2-V2DEMO",
+      "version": "2.9.5-V2DEMO",
       "file": "firmware/timingpod-v2demo/firmware.factory.bin",
-      "sha256": "BB5D7C11EBB5C5A75EFB65392030F933D8F73B5AC79428465C83564807A59A8E",
-      "sizeBytes": 1990656,
+      "sha256": "D3D21D53B8F2070FBF0213F686CE51BEA4A1D5162ACC5647D19A6D23C6E5BE49",
+      "sizeBytes": 1991712,
       "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V, I2C addr 0x10)"
     },
     "timingpod-v2demo-uart": {
-      "version": "2.9.2-V2DEMO-UART",
+      "version": "2.9.5-V2DEMO-UART",
       "file": "firmware/timingpod-v2demo-uart/firmware.factory.bin",
-      "sha256": "5CA2179F07AF672FB20AF4CEB6F37F7D8F600B3A82965CCE95C81CD052F22037",
-      "sizeBytes": 1989744,
+      "sha256": "FA808FB769B4738793A0DBEECAB51AD9BA0EE0E3E65A20E31FD82AFB075FFCBE",
+      "sizeBytes": 1990816,
       "notes": "Demo pods with Benewake TFmini-S read over UART (green TXD -> GPIO42, white RXD -> GPIO41). Skips the Wire1 I2C scan, which the other builds hang on."
     },
     "heltec-v3-gateway": {
-      "version": "2.9.4",
+      "version": "2.9.5",
       "file": "firmware/heltec-v3-gateway/firmware.factory.bin",
-      "sha256": "D2C6C54190BF28CF134DA5B9792A5A7BBA7AB9A0A10D3D4E211C58F1FE69186E",
+      "sha256": "C6C0724FA26BA8129F50A0D90AED707FE31101420C13E693CC9CFF5D1B9BE55E",
       "sizeBytes": 1913408,
       "notes": "RaceVillage gateway"
     },
