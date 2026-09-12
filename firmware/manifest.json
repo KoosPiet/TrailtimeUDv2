@@ -1,33 +1,33 @@
 {
-  "generated": "2026-09-02T08:13:04.7721924Z",
+  "generated": "2026-09-12T09:56:56.8307810Z",
   "line": "v2",
   "targets": {
     "heltec-v3": {
-      "version": "2.9.2",
+      "version": "2.9.4",
       "file": "firmware/heltec-v3/firmware.factory.bin",
-      "sha256": "5709EF6939F24B88C270865F932C78A6948C6544FD1D9C9314DED5D9F6909B70",
-      "sizeBytes": 1988992,
+      "sha256": "6D81A4EE3C1390B2DD849712AFA9827964BB58ECFD195D8B6FBEECD8AA5DE1E1",
+      "sizeBytes": 1991584,
       "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini)"
     },
     "timingpod-v2demo": {
       "version": "2.9.2-V2DEMO",
       "file": "firmware/timingpod-v2demo/firmware.factory.bin",
-      "sha256": "F5F1605BE71865664BBD2C136C71E01D13C4E94D4A442C84B4A200A23DE70AEF",
-      "sizeBytes": 1988128,
+      "sha256": "BB5D7C11EBB5C5A75EFB65392030F933D8F73B5AC79428465C83564807A59A8E",
+      "sizeBytes": 1990656,
       "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V, I2C addr 0x10)"
     },
     "timingpod-v2demo-uart": {
       "version": "2.9.2-V2DEMO-UART",
       "file": "firmware/timingpod-v2demo-uart/firmware.factory.bin",
-      "sha256": "97FE45C125D9F953C67CA2509162D87D24E4A088FE60B06E1895D8AC187DDEA8",
-      "sizeBytes": 1988480,
+      "sha256": "5CA2179F07AF672FB20AF4CEB6F37F7D8F600B3A82965CCE95C81CD052F22037",
+      "sizeBytes": 1989744,
       "notes": "Demo pods with Benewake TFmini-S read over UART (green TXD -> GPIO42, white RXD -> GPIO41). Skips the Wire1 I2C scan, which the other builds hang on."
     },
     "heltec-v3-gateway": {
-      "version": "2.9.2",
+      "version": "2.9.4",
       "file": "firmware/heltec-v3-gateway/firmware.factory.bin",
-      "sha256": "DBEB1216CE83980FCACC99754572C2FA6B03691A88FFFA66BB87EC935186B5A2",
-      "sizeBytes": 1912544,
+      "sha256": "D2C6C54190BF28CF134DA5B9792A5A7BBA7AB9A0A10D3D4E211C58F1FE69186E",
+      "sizeBytes": 1913408,
       "notes": "RaceVillage gateway"
     },
     "beacon-esp32c3": {
@@ -35,7 +35,7 @@
       "file": "",
       "sha256": "",
       "sizeBytes": 0,
-      "notes": "Published separately in firmware/manifest-beacon.json \u2014 the beacon is its own product on its own 3.x stream, and a 3.x entry in this 2.x pod manifest is refused by the desktop's line guard. Kept here as a version marker for older desktops only."
+      "notes": "Published separately in firmware/manifest-beacon.json — the beacon is its own product on its own 3.x stream, and a 3.x entry in this 2.x pod manifest is refused by the desktop's line guard. Kept here as a version marker for older desktops only."
     }
   }
 }
