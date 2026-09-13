@@ -1,32 +1,32 @@
 {
-  "generated": "2026-09-12T10:14:53.3112565Z",
+  "generated": "2026-09-13T19:36:13.4138834Z",
   "line": "v2",
   "targets": {
     "heltec-v3": {
-      "version": "2.9.5",
+      "version": "2.10.0",
       "file": "firmware/heltec-v3/firmware.factory.bin",
-      "sha256": "BBC9F9D1E4CD1BD0E3C9FDAFBAFC866293DF3F08E386A16B9DB326B8772FEEDF",
-      "sizeBytes": 1992656,
+      "sha256": "C8010352A9EC77CC7BFE275708AE9C9B717A6AAB9C9A8831A77982A2224FE0C5",
+      "sizeBytes": 1993632,
       "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini)"
     },
     "timingpod-v2demo": {
-      "version": "2.9.5-V2DEMO",
+      "version": "2.10.0-V2DEMO",
       "file": "firmware/timingpod-v2demo/firmware.factory.bin",
-      "sha256": "D3D21D53B8F2070FBF0213F686CE51BEA4A1D5162ACC5647D19A6D23C6E5BE49",
-      "sizeBytes": 1991712,
+      "sha256": "4D9624EE2351B0D435FB69C0867F766BCD5358C1F5AA83A8BFFBC929E9F3352C",
+      "sizeBytes": 1992752,
       "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V, I2C addr 0x10)"
     },
     "timingpod-v2demo-uart": {
-      "version": "2.9.5-V2DEMO-UART",
+      "version": "2.10.0-V2DEMO-UART",
       "file": "firmware/timingpod-v2demo-uart/firmware.factory.bin",
-      "sha256": "FA808FB769B4738793A0DBEECAB51AD9BA0EE0E3E65A20E31FD82AFB075FFCBE",
-      "sizeBytes": 1990816,
+      "sha256": "0CC4F845A530123623356B3E091226C78EDA576B4C7FC1736CA54074B48283FF",
+      "sizeBytes": 1991808,
       "notes": "Demo pods with Benewake TFmini-S read over UART (green TXD -> GPIO42, white RXD -> GPIO41). Skips the Wire1 I2C scan, which the other builds hang on."
     },
     "heltec-v3-gateway": {
-      "version": "2.9.5",
+      "version": "2.10.0",
       "file": "firmware/heltec-v3-gateway/firmware.factory.bin",
-      "sha256": "C6C0724FA26BA8129F50A0D90AED707FE31101420C13E693CC9CFF5D1B9BE55E",
+      "sha256": "CC572A8677D5A736E4E3180B6A664C8261E2A0AE3B955E03EA6C4E5FDC5D6788",
       "sizeBytes": 1913408,
       "notes": "RaceVillage gateway"
     },
