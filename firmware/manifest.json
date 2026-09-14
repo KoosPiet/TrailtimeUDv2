@@ -1,32 +1,32 @@
 {
-  "generated": "2026-09-13T19:36:13.4138834Z",
+  "generated": "2026-09-14T06:19:08.4867889Z",
   "line": "v2",
   "targets": {
     "heltec-v3": {
-      "version": "2.10.0",
+      "version": "2.10.1",
       "file": "firmware/heltec-v3/firmware.factory.bin",
-      "sha256": "C8010352A9EC77CC7BFE275708AE9C9B717A6AAB9C9A8831A77982A2224FE0C5",
+      "sha256": "E1A960D9A63AF8F7A30021C8D934AD42FDEA425161E629532B5B8599900EF730",
       "sizeBytes": 1993632,
       "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini)"
     },
     "timingpod-v2demo": {
-      "version": "2.10.0-V2DEMO",
+      "version": "2.10.1-V2DEMO",
       "file": "firmware/timingpod-v2demo/firmware.factory.bin",
-      "sha256": "4D9624EE2351B0D435FB69C0867F766BCD5358C1F5AA83A8BFFBC929E9F3352C",
-      "sizeBytes": 1992752,
+      "sha256": "685FB59F42C365A9E369859622CED417E6FFF86606A1FD3A8959E2E7F059EEEF",
+      "sizeBytes": 1992736,
       "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V, I2C addr 0x10)"
     },
     "timingpod-v2demo-uart": {
-      "version": "2.10.0-V2DEMO-UART",
+      "version": "2.10.1-V2DEMO-UART",
       "file": "firmware/timingpod-v2demo-uart/firmware.factory.bin",
-      "sha256": "0CC4F845A530123623356B3E091226C78EDA576B4C7FC1736CA54074B48283FF",
-      "sizeBytes": 1991808,
+      "sha256": "972867B6083BB1DE06868F94F8EE3A6CEE5156D2EBF32E30CCD12FF0D0351F9F",
+      "sizeBytes": 1991792,
       "notes": "Demo pods with Benewake TFmini-S read over UART (green TXD -> GPIO42, white RXD -> GPIO41). Skips the Wire1 I2C scan, which the other builds hang on."
     },
     "heltec-v3-gateway": {
-      "version": "2.10.0",
+      "version": "2.10.1",
       "file": "firmware/heltec-v3-gateway/firmware.factory.bin",
-      "sha256": "CC572A8677D5A736E4E3180B6A664C8261E2A0AE3B955E03EA6C4E5FDC5D6788",
+      "sha256": "7282C095D5A7E8C32CCA0CEACA23B1677594A0E883251176C5F864CC19D0E196",
       "sizeBytes": 1913408,
       "notes": "RaceVillage gateway"
     },
