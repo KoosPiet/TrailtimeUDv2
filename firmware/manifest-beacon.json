@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-15T15:46:47.3854811Z",
+  "generated": "2026-09-15T16:06:28.7710028Z",
   "line": "beacon",
   "targets": {
     "beacon-esp32c3": {
-      "version": "3.6.0",
+      "version": "3.6.1",
       "file": "",
       "sha256": "",
       "sizeBytes": 0,
@@ -33,8 +33,8 @@
           "name": "app",
           "offset": "0x20000",
           "file": "firmware/beacon-esp32c3/firmware.bin",
-          "sha256": "7BC9B6324F114EC69DC4EE9658479F2664C82C8B3B7A9F02944B054CA6458A23",
-          "sizeBytes": 1217984
+          "sha256": "55ED0D866709E7007B2B39467919534C7FEAF37877D6BFFD55216AAABCA21046",
+          "sizeBytes": 1219184
         }
       ],
       "notes": "TrailTime beacon (ESP32-C3). Flashed as separate images so nvs (the bib) and podlog (witness records) survive. Bib and power profile are set over BLE."
