@@ -1,9 +1,11 @@
 {
-  "generated": "2026-09-19T19:04:21.0351886Z",
+  "generated": "2026-09-23T12:26:25.5848531Z",
   "line": "beacon",
   "targets": {
     "beacon-esp32c3": {
-      "version": "3.6.2",
+      "version": "3.7.3",
+      "hardwareVariant": 1,
+      "displayName": "Beacon",
       "file": "",
       "sha256": "",
       "sizeBytes": 0,
@@ -12,8 +14,8 @@
           "name": "bootloader",
           "offset": "0x0",
           "file": "firmware/beacon-esp32c3/bootloader.bin",
-          "sha256": "9280447D0DBA10AF87A3C07639CDE1B4C482225246E827BFC282D9B27F5DF02B",
-          "sizeBytes": 21280
+          "sha256": "BCFBDBB06F9429B7CAC8AF27D7785C10ED928C8D4C931158DFAF6F9F7D6EA3AD",
+          "sizeBytes": 21184
         },
         {
           "name": "partitions",
@@ -33,11 +35,50 @@
           "name": "app",
           "offset": "0x20000",
           "file": "firmware/beacon-esp32c3/firmware.bin",
-          "sha256": "E61E9F5A5CDE74D67945ED2AF77F5AD57D547FF48B4AEFBAB8E0DF471C874222",
-          "sizeBytes": 1190736
+          "sha256": "CB215161987080D6F3889C0806EAC5C90457409403F73FFCBFE1AAE1E25A8C08",
+          "sizeBytes": 1190608
         }
       ],
-      "notes": "TrailTime beacon (ESP32-C3). Flashed as separate images so nvs (the bib) and podlog (witness records) survive. Bib and power profile are set over BLE."
+      "notes": "TrailTime beacon (ESP32-C3, original hardware, no charger). Flashed as separate images so nvs (the bib) and podlog (witness records) survive. Bib is set over BLE."
+    },
+    "beacon-v2-esp32c3": {
+      "version": "3.7.3",
+      "hardwareVariant": 2,
+      "displayName": "Beacon v2",
+      "file": "",
+      "sha256": "",
+      "sizeBytes": 0,
+      "parts": [
+        {
+          "name": "bootloader",
+          "offset": "0x0",
+          "file": "firmware/beacon-v2-esp32c3/bootloader.bin",
+          "sha256": "CFB49302CCDC9C32FD93E3EE4FF256EB7DDF5B2A76DB36D4206C878F6D0C9DF1",
+          "sizeBytes": 21184
+        },
+        {
+          "name": "partitions",
+          "offset": "0x8000",
+          "file": "firmware/beacon-v2-esp32c3/partitions.bin",
+          "sha256": "639A9393F84BD507CADEBC164C4D9E72B2539608485879CB8B51356E484EF6D1",
+          "sizeBytes": 3072
+        },
+        {
+          "name": "otadata",
+          "offset": "0x10000",
+          "file": "firmware/beacon-v2-esp32c3/ota_data_initial.bin",
+          "sha256": "7D2C7AC4888BFD75CD5F56E8D61F69595121183AFC81556C876732FD3782C62F",
+          "sizeBytes": 8192
+        },
+        {
+          "name": "app",
+          "offset": "0x20000",
+          "file": "firmware/beacon-v2-esp32c3/firmware.bin",
+          "sha256": "15CB967273E4DFADCB024E73722B91104B136472E8B8699626092A2D9CF65396",
+          "sizeBytes": 1190608
+        }
+      ],
+      "notes": "TrailTime Beacon v2 (ESP32-C3 + TP4056 charger, dock detect on GPIO5). Deep-sleeps on USB power so the charger can terminate. NEVER flash to an original beacon."
     }
   }
 }
