@@ -1,33 +1,33 @@
 {
-  "generated": "2026-10-14T17:34:59.4535400Z",
+  "generated": "2026-10-14T18:12:32.9868564Z",
   "line": "v2",
   "targets": {
     "heltec-v3": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "file": "firmware/heltec-v3/firmware.factory.bin",
-      "sha256": "92F7BE7115F58E3537964A5B7FB1293C521A4C9EBFEB5D3B38659BDDE3064886",
-      "sizeBytes": 2002320,
+      "sha256": "7D1A8526BECCFFB4A110C573B9E15CBAED9D2FC8B2E9CABEF037EDB6581461A6",
+      "sizeBytes": 2003200,
       "notes": "Standard TimingPod V2 (RFID + Lidar pods, TOFSense-F2 Mini)"
     },
     "timingpod-v2demo": {
-      "version": "2.11.2-V2DEMO",
+      "version": "2.11.3-V2DEMO",
       "file": "firmware/timingpod-v2demo/firmware.factory.bin",
-      "sha256": "D72A129C53BF509F27172B792F822BEE69C017E9B8C53E254E60E9E4644DD524",
-      "sizeBytes": 2001200,
+      "sha256": "E0541934E204CBFF2ED2F5D56060889CE04A307BED03D07DBE78C6D59E94563B",
+      "sizeBytes": 2002128,
       "notes": "Demo pods with Benewake TFmini-S IIC LiDAR (5V, I2C addr 0x10)"
     },
     "timingpod-v2demo-uart": {
-      "version": "2.11.2-V2DEMO-UART",
+      "version": "2.11.3-V2DEMO-UART",
       "file": "firmware/timingpod-v2demo-uart/firmware.factory.bin",
-      "sha256": "592118EFECC1381CFD39484F2F050CEA8DD434E657D957607909862AA78E9D9B",
-      "sizeBytes": 2000272,
+      "sha256": "538AF390144D8A5971E0AA52B6F866E910AD047DEAE436E6DEC755236FBCA221",
+      "sizeBytes": 2001184,
       "notes": "Demo pods with Benewake TFmini-S read over UART (green TXD -> GPIO42, white RXD -> GPIO41). Skips the Wire1 I2C scan, which the other builds hang on."
     },
     "heltec-v3-gateway": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "file": "firmware/heltec-v3-gateway/firmware.factory.bin",
-      "sha256": "A30DF4C902485172BD7B2AA9BEFFE7598445C8BAA726C994CEBADE6E95B79D29",
-      "sizeBytes": 1795472,
+      "sha256": "366956C35F40F185D4741DA9DCA83C4C993F24927E3EF6C62E66F74F4728CE15",
+      "sizeBytes": 1795488,
       "notes": "RaceVillage gateway"
     },
     "beacon-esp32c3": {
